@@ -1,0 +1,24 @@
+{
+  "name": "ahws-gruntfile",
+  "version": "0.0.1",
+  "description": "Gruntfile for ecommerce-ah-online modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahwswebdev/ahws-gruntfile.git"
+  },
+  "author": "ahwswebdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahwswebdev/ahws-gruntfile/issues"
+  },
+  "homepage": "https://github.com/ahwswebdev/ahws-gruntfile",
+
+  "devDependencies": {
+      "glob": "4.0.5",
+      "time-grunt": "1.0.0"
+  }
+}
