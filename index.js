@@ -31,8 +31,14 @@ module.exports = function (grunt) {
     asci();
 
     //Create symlinks to parent directory to facilitate node_modules sharing among ecommerce-ah-online modules
-    fs.symlink('../node_modules', 'node_modules', function() {});
-    fs.symlink('../package.json', 'package.json', function() {});
+    if (!grunt.option('no-symlink')) {
+        fs.symlink('../node_modules', 'node_modules', function () {
+
+        });
+        fs.symlink('../package.json', 'package.json', function () {
+
+        });
+    }
 
     //Load AHWS json file
     if (grunt.file.exists(cwd + '/ahws.json')) {
