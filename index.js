@@ -6,7 +6,8 @@
 //
 var glob = require('glob'),
     timeGrunt = require('time-grunt'),
-    fs = require('fs');
+    fs = require('fs'),
+    asci = require('./asci.js');
 
 module.exports = function (grunt) {
 
@@ -26,6 +27,8 @@ module.exports = function (grunt) {
         }),
         ahwsJsonFile,
         config;
+
+    asci();
 
     //Create symlinks to parent directory to facilitate node_modules sharing among ecommerce-ah-online modules
     fs.symlink('../node_modules', 'node_modules');

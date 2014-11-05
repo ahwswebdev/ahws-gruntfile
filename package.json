@@ -1,6 +1,6 @@
 {
   "name": "ahws-gruntfile",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gruntfile for ecommerce-ah-online modules",
   "main": "index.js",
   "scripts": {
