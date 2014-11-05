@@ -63,7 +63,7 @@ module.exports = function (grunt) {
 
     // Initialize grunt tasks
     config = {
-        pkg: grunt.file.readJSON(cwd + '/config.json'),
+        cfg: grunt.file.readJSON(cwd + '/config.json'),
         bwr: grunt.file.readJSON(cwd + '/bower.json'),
         ahws: ahwsJsonFile,
         env: process.env
