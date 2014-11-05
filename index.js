@@ -47,7 +47,7 @@ module.exports = function (grunt) {
     timeGrunt(grunt);
 
     //Write .compiled
-    grunt.file.write(cwd + '.compiled', '');
+    grunt.file.write(cwd + '/.compiled', '');
 
     // Register grunt tasks
     grunt.loadTasks(cwd + '/grunt_tasks');
